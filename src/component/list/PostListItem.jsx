@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const Wrapper = styled.div`
-    width:calc(100%-32px);
+    width:calc(100% - 32px);
     padding:16px;
     display:flex;
     flex-direction:column;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     }
 `;
 
-const TitleText = styled.p`
+const TitleText = styled.p` 
     font-size:20px;
     font-weight:500;
 `;
@@ -24,7 +24,7 @@ function PostListItem(props) {
     const { post, onClick } = props;
     return (
         <Wrapper onClick={onClick}>
-            <TitleText>{post.Title}</TitleText>
+            <TitleText>{post.title}</TitleText>
         </Wrapper>
     )
 }
